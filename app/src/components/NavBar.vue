@@ -7,7 +7,7 @@
             <a href="#" class="navbar-item">Reviews</a>
             <a href="#" class="navbar-item">About Us</a>
           </div>
-          <img alt="all day logo" id="logo" src="https://helixsleep-code-challenge.s3.amazonaws.com/logo.png" height="50"><a href="#" alt="all day logo"></a>
+          <img alt="all day logo" id="logo" src="https://helixsleep-code-challenge.s3.amazonaws.com/logo.png"><a href="#" alt="all day logo"></a>
           <div class="navbar-right-side">
             <a href="#" class="navbar-item">Showroom</a>
             <a href="#" class="navbar-item">Swatches</a>
@@ -19,22 +19,19 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'NavBar'
 }
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-  .navbar-row {
-    margin-top: px;
-  }
-
   #logo {
     position: relative;
     display: inline-block;
     bottom: 10px;
     margin-right: 50px;
+    height: 50px;
   }
 
   .navbar-left-side {
