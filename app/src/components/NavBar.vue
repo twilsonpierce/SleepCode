@@ -30,7 +30,6 @@ export default {
     margin-top: px;
   }
 
-  
   #logo {
     position: relative;
     display: inline-block;
