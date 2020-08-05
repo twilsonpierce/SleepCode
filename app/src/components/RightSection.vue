@@ -1,6 +1,5 @@
 <template>
   <div class="right-section">
-    <div class="right-section-content">
       <h1 class="product-title">The Sofa</h1>
       <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div class="pay-now-section">
@@ -10,7 +9,7 @@
           <p><del>$1,450</del></p>
           <p>$200 OFF with code</p> 
         </div>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
         <div class="pay-as-low">
           <span class="pay-as-low-title">Pay as low as</span>
           <h2 class="price">$25/month</h2>
@@ -18,10 +17,24 @@
           <a href="#" class="learn-more">Learn More</a> 
         </div> 
       </div>
-      <button class="checkout-button">Add To Cart</button><br/>
-      <a href="#" class="save-design-link">Save Design For Later</a>
-      <div class="divider-two"></div>
-    </div>
+      <!-- <button class="checkout-button">Add To Cart</button><br/>
+      <a href="#" class="save-design-link">Save Design For Later</a> -->
+      <!-- <div class="divider-two"></div> -->
+
+      <!-- <div class="bottom-right-section">
+        <h1 class="product-title">1.Choose A Fabric </h1> 
+        <p class="pay-now-title">Choose your choice from fabrics to leather </p>
+        <span>Fabric Choices</span>
+
+      <div class="bottom-right-sofas">
+        <img src="#" alt="amber-sofa" />
+        <button type="button">Amber</button>
+        <img src="#" alt="charocal-sofa" />
+        <button type="button">Charocal</button>
+        <img src="#" alt="red-sofa"/>
+        <button type="button">Red</button>
+      </div>
+    </div>  -->
   </div>
 </template>
 
@@ -35,10 +48,12 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
  
  .right-section {
-    display: flex;
-    justify-content: flex-end;
-    padding: 50px;
-    /* margin-left: 0px; */
+   display:flex;
+   flex-direction: column;
+   height: auto;
+   width: 50%;
+   margin-left: 38rem;
+   margin-top: 4rem;
  }
 
  .product-title {
@@ -85,6 +100,7 @@ export default {
 
 .checkout-button {
   background: #0D6EF0;
+  border-color:#0D6EF0;
   border-radius: 6px;
   font-family: 'Bungee', cursive;
   font-size: 20px;
@@ -93,8 +109,7 @@ export default {
   top: 25%;
   color: #FFFFFF;
   line-height: 24px;
-  align-items: center;
-  text-align: center;
+  margin-bottom: 28px;
 }
 
 .save-design-link {
@@ -105,7 +120,6 @@ export default {
   align-items: center;
   text-align: center;
   margin-top: 20px;
-
 }
 
 .divider {
