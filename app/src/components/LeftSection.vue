@@ -50,7 +50,7 @@ export default {
 
   #main-product {
     width: auto;
-    height: 600px;
+    height: 550px;
   }
   .left-section-perks {
     display: flex;

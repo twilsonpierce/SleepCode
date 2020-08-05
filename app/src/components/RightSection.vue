@@ -20,6 +20,7 @@
       </div>
       <button class="checkout-button">Add To Cart</button><br/>
       <a href="#" class="save-design-link">Save Design For Later</a>
+      <div class="divider-two"></div>
     </div>
   </div>
 </template>
@@ -36,7 +37,8 @@ export default {
  .right-section {
     display: flex;
     justify-content: flex-end;
-    padding: 60px;
+    padding: 50px;
+    /* margin-left: 0px; */
  }
 
  .product-title {
@@ -63,12 +65,14 @@ export default {
  }
 
  .pay-now {
+    margin-top: 25px;
     margin-left: 150px;
     font-weight: normal;
     font-size: 20px;
  }
  
  .pay-as-low {
+    margin-top: 25px;
     margin-right: 200px;
     font-weight: normal;
     font-size: 20px;
@@ -107,8 +111,16 @@ export default {
 .divider {
   display: block;
   width: 10rem;
-  border-top: 2px solid black;
+  border-top: 2px solid #444444;
   transform: rotate(90deg);
   margin-left: -200px;
+}
+
+.divider-two {
+  display: block;
+  width: 80%;
+  border-top: 2px solid #000000;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 </style>
