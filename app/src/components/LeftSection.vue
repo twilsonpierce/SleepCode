@@ -49,8 +49,8 @@ export default {
 
   #main-product {
     width: auto;
-    height: 400px;
-    margin-left: -225px;
+    height: 550px;
+    margin-left: -130px;
   }
   .left-section-perks {
     margin-right: 230px;
@@ -58,6 +58,6 @@ export default {
   .perk-items {
     margin-top: 10px;
     padding-left: 30px;
-    height: 40px;
+    height: 45px;
   }
 </style>

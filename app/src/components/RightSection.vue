@@ -18,24 +18,25 @@
           <a href="#" class="learn-more">Learn More</a> 
         </div> 
       </div>
-      <!-- <button class="checkout-button">Add To Cart</button><br/>
-      <a href="#" class="save-design-link">Save Design For Later</a> -->
-      <!-- <div class="divider-two"></div> -->
 
-      <!-- <div class="bottom-right-section">
-        <h1 class="product-title">1.Choose A Fabric </h1> 
-        <p class="pay-now-title">Choose your choice from fabrics to leather </p>
-        <span>Fabric Choices</span>
+      <button class="checkout-button">Add To Cart</button><br/>
+      <a href="#" class="save-design-link">Save Design For Later</a>
+      <div class="divider-two"></div>
+
+      <div class="bottom-right-section">
+        <h5 class="bottom-right-title">1.Choose A Fabric </h5> 
+        <p class="bottom-right-subtitle">Choose your choice from fabrics to leather</p>
+        <h5 class="bottom-right-subtitle">Fabric Choices</h5>
+      </div> 
 
       <div class="bottom-right-sofas">
-        <img src="#" alt="amber-sofa" />
-        <button type="button">Amber</button>
-        <img src="#" alt="charocal-sofa" />
-        <button type="button">Charocal</button>
-        <img src="#" alt="red-sofa"/>
-        <button type="button">Red</button>
+        <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-amber.jpg" alt="amber-sofa" class="sofa" />
+        <button type="button" class="bottom-right-button">Amber</button>
+        <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-charcoal.jpg" alt="charocal-sofa" class="sofa"/>
+        <button type="button" class="bottom-right-button">Charocal</button>
+        <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-red.jpg" alt="red-sofa" class="sofa"/>
+        <button type="button" class="bottom-right-button">Red</button>
       </div>
-    </div>  -->
   </div>
 </template>
 
@@ -47,13 +48,12 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
- 
  .right-section {
    display:flex;
    flex-direction: column;
    height: auto;
-   width: 50%;
-   margin-left: 38rem;
+   width: 100;
+   margin-left: 50rem;
    margin-top: 3rem;
  }
 
@@ -102,16 +102,17 @@ export default {
 
 .checkout-button {
   background: #0D6EF0;
-  border-color:#0D6EF0;
   border-radius: 6px;
+  border: none;
   font-family: 'Bungee', cursive;
   font-size: 20px;
-  width: 350px;
+  width: 375px;
   height: 50px;
   top: 25%;
   color: #FFFFFF;
   line-height: 24px;
   margin-bottom: 28px;
+  margin-left: 100px;
 }
 
 .save-design-link {
@@ -121,7 +122,8 @@ export default {
   color: #444444;
   align-items: center;
   text-align: center;
-  margin-top: 20px;
+  padding-bottom: 50px;
+  margin-top: -20px;
 }
 
 .divider {
@@ -136,7 +138,44 @@ export default {
   display: block;
   width: 80%;
   border-top: 2px solid #000000;
-  margin-left: 100px;
-  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
+.bottom-right-title {
+  font-family: 'Bungee', cursive;
+  font-size: 15px;
+  color: #0547A0;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.bottom-right-subtitle {
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 30px;
+}
+
+.bottom-right-sofas {
+  display: flex; 
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.sofa {
+  height: 90px;
+  width: 134px;
+  padding-left: 10px;
+
+}
+
+.bottom-right-button {
+  width: 133px;
+  height: 40px;
+  background: #E8E8E8;
+  border-radius: 6px;
+  border: none;
+  margin-top: 120px;
+  margin-left: -130px;
 }
 </style>
