@@ -3,17 +3,18 @@
       <h1 class="product-title">The Sofa</h1>
       <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div class="pay-now-section">
-        <div class="pay-now">
-          <span class="pay-now-title">Pay Now</span>
+
+        <div class="pay-now-block">
+          <p class="pay-now-title">Pay Now</p>
           <h2 class="price">$1,250</h2>
           <p><del>$1,450</del></p>
           <p>$200 OFF with code</p> 
         </div>
-        <!-- <div class="divider"></div> -->
-        <div class="pay-as-low">
-          <span class="pay-as-low-title">Pay as low as</span>
+        <div class="divider"></div>
+        <div class="pay-now-block">
+          <p class="pay-now-title">Pay as low as</p>
           <h2 class="price">$25/month</h2>
-          <p class="pay-as-low-title">with Klarna</p>
+          <p>with Klarna</p>
           <a href="#" class="learn-more">Learn More</a> 
         </div> 
       </div>
@@ -53,7 +54,7 @@ export default {
    height: auto;
    width: 50%;
    margin-left: 38rem;
-   margin-top: 4rem;
+   margin-top: 3rem;
  }
 
  .product-title {
@@ -77,18 +78,19 @@ export default {
     justify-content: space-between;
     padding-bottom: 10px;
     width: 100%;
- }
+  }
 
+  .pay-now-block {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
  .pay-now {
-    margin-top: 25px;
-    margin-left: 150px;
     font-weight: normal;
     font-size: 20px;
  }
  
  .pay-as-low {
-    margin-top: 25px;
-    margin-right: 200px;
     font-weight: normal;
     font-size: 20px;
  }
