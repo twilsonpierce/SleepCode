@@ -5,7 +5,7 @@
         <p class="main-title">Secure Checkout</p>
         <p class="main-title">Ships in 5-7 Business Days</p> 
       </div>
-      <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-red.jpg" alt="red sofa" id="main-product"/>
+      <img :src="defaultPhoto" id="main-product"/>
       <div class="left-section-perks">
         <img src=" https://helixsleep-code-challenge.s3.amazonaws.com/free-shipping.png" alt="free-shipping" class="perk-items"/>
         <img src="https://helixsleep-code-challenge.s3.amazonaws.com/trial.png" alt="365 day trial" class="perk-items"/>
@@ -19,7 +19,13 @@
 
 <script>
 export default {
-  name: 'LeftSection'
+  name: 'LeftSection', 
+  props: {
+    defaultPhoto: {
+      type: String, 
+      default:'https://helixsleep-code-challenge.s3.amazonaws.com/sofa-red.jpg'
+    }
+  }
 }
 </script>
 

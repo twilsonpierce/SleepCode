@@ -3,7 +3,6 @@
       <h1 class="product-title">The Sofa</h1>
       <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div class="pay-now-section">
-
         <div class="pay-now-block">
           <p class="pay-now-title">Pay Now</p>
           <h2 class="price">$1,250</h2>
@@ -31,18 +30,41 @@
 
       <div class="bottom-right-sofas">
         <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-amber.jpg" alt="amber-sofa" class="sofa" />
-        <button type="button" class="bottom-right-button">Amber</button>
+        <button type="button" class="bottom-right-button" v-on:click="this.amberOnChange">Amber</button>
         <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-charcoal.jpg" alt="charocal-sofa" class="sofa"/>
-        <button type="button" class="bottom-right-button">Charocal</button>
+        <button type="button" class="bottom-right-button" v-on:click="this.charocalOnChange">Charocal</button>
         <img src="https://helixsleep-code-challenge.s3.amazonaws.com/sofa-red.jpg" alt="red-sofa" class="sofa"/>
-        <button type="button" class="bottom-right-button">Red</button>
+        <button type="button" class="bottom-right-button" v-on:click="this.redOnChange">Red</button>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'RightSection'
+  name: 'RightSection',
+  data () {
+    return {
+      images: [
+        'https://helixsleep-code-challenge.s3.amazonaws.com/sofa-amber.jpg',
+        'https://helixsleep-code-challenge.s3.amazonaws.com/sofa-charcoal.jpg', 
+        'https://helixsleep-code-challenge.s3.amazonaws.com/sofa-red.jpg'
+      ]
+    }
+  }, 
+  methods: {
+    amberOnChange () {
+      this.props.defaultPhoto = this.images[0]
+      // console.log('Hello')
+    },
+    charocalOnChange () {
+      // this.props.img = this.images[1]
+      console.log('Helloooo')
+    }, 
+    redOnChange () {
+      // this.props.img = this.images[2]
+      console.log('Helloooooooo')
+    }
+  }
 }
 </script>
 
