@@ -2,8 +2,6 @@
 Helix Sleep Front-End Code Challenge 
 
 
-# app
-
 ## Project setup
 ```
 npm install
